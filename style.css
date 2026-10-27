@@ -185,13 +185,38 @@ input.invalid, select.invalid, textarea.invalid {
   font-size: 0.85rem;
 }
 
-/* ---- Dark theme: JS adds class 'dark' to <body> ---- */
-body.dark {
-  --bg: #0f172a;
-  --card-bg: #1e293b;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --border: #334155;
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+  background-color: #121212;
+  color: #f3f4f6;
+}
+
+body.dark-mode .site-header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f3f4f6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #888;
+}
+
+body.dark-mode .site-footer {
+  color: #9ca3af;
 }
 
 /* ---- Responsive: stack to one column on small screens ---- */
